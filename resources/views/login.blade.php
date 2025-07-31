@@ -22,14 +22,21 @@
                     <p>¡Emprende ahora!</p>
                 </div>
                 <!-- Right panel -->
-                <div class="right-panel col-12 col-md-7">
+                <div class="right-panel col-12 col-md-7" >
+                    
                     <h2 class="mb-1 text-center">Iniciar Sesión</h2>
-                    <form>
+                    @if(session()->has('message'))
+                        <div class="alert alert-danger" role="alert">
+                            {{ session('message') }}
+                        </div>
+                    @endif
+                    <form method="POST" action="{{ route('login') }}">
+                        @csrf
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Usuario" required>
+                            <input type="text" class="form-control" placeholder="Usuario" required name="name">
                         </div>
                         <div class="mb-2">
-                            <input type="password" class="form-control" placeholder="Contraseña" required>
+                            <input type="password" class="form-control" placeholder="Contraseña" required name="password">
                         </div>
                         <div class="mb-3">
                             <a href="#" class="forgot-link">Recuperar contraseña</a>

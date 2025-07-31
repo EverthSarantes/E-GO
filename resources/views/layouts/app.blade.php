@@ -49,7 +49,10 @@
                 </ul>
                 <hr class="d-none d-md-block">
                 <div class="mt-auto mb-3 text-center d-none d-md-block">
-                    <a href="#" class="btn btn-outline-light btn-sm">Cerrar sesión</a>
+                    <form action="{{route('logout')}}" method="post">
+                        @csrf
+                        <button type="submit" class="btn btn-outline-light btn-sm">Cerrar sesión</button>
+                    </form>
                 </div>
             </nav>
             <!-- Main content -->
