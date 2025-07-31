@@ -48,18 +48,5 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Toggle Cliente/Emprendedor
-        const btnCliente = document.getElementById('btnCliente');
-        const btnEmprendedor = document.getElementById('btnEmprendedor');
-        btnCliente.addEventListener('click', function() {
-            btnCliente.classList.add('active');
-            btnEmprendedor.classList.remove('active');
-        });
-        btnEmprendedor.addEventListener('click', function() {
-            btnEmprendedor.classList.add('active');
-            btnCliente.classList.remove('active');
-        });
-    </script>
 </body>
 </html>
