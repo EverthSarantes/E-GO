@@ -17,20 +17,7 @@
                 <!-- Left panel -->
                 <div class="left-panel col-5 d-none d-md-flex flex-column align-items-center justify-content-center">
                     <!-- SVG Mapa Nicaragua con pines -->
-                    <svg width="250" height="270" viewBox="0 0 250 270" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M30,220 Q10,120 80,40 Q170,-10 230,60 Q260,120 200,230 Q120,270 30,220 Z" fill="#e6e6fa" stroke="#b3b3e6" stroke-width="3"/>
-                        <!-- Pines morados -->
-                        <circle cx="60" cy="80" r="7" fill="#7b5cff"/>
-                        <circle cx="120" cy="60" r="7" fill="#7b5cff"/>
-                        <circle cx="200" cy="90" r="7" fill="#7b5cff"/>
-                        <circle cx="80" cy="150" r="7" fill="#7b5cff"/>
-                        <circle cx="170" cy="180" r="7" fill="#7b5cff"/>
-                        <circle cx="60" cy="200" r="7" fill="#7b5cff"/>
-                        <!-- Pines amarillos -->
-                        <circle cx="100" cy="120" r="7" fill="#ffd600"/>
-                        <circle cx="210" cy="210" r="7" fill="#ffd600"/>
-                        <circle cx="150" cy="50" r="7" fill="#ffd600"/>
-                    </svg>
+                    <img src="/img/nicaragua-map.svg" alt="Mapa de Nicaragua" width="220" height="250" style="display:block; margin-bottom:18px;">
                     <h1 class="mt-4 mb-2">E-GO</h1>
                     <p>¡Emprende ahora!</p>
                 </div>
