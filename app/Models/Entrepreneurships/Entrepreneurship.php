@@ -4,6 +4,7 @@ namespace App\Models\Entrepreneurships;
 
 use App\Models\BaseModel;
 use App\Models\User;
+use App\Models\Products\Product;
 
 class Entrepreneurship extends BaseModel
 {
@@ -31,5 +32,10 @@ class Entrepreneurship extends BaseModel
     public function entrepreneurshipType()
     {
         return $this->belongsTo(EntrepreneurshipType::class, 'entrepreneurship_type_id');
+    }
+
+    public function products()
+    {
+        return $this->hasMany(Product::class, 'entrepreneurship_id');
     }
 }
