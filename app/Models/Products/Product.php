@@ -64,4 +64,9 @@ class Product extends BaseModel
     {
         return $this->belongsTo(Entrepreneurship::class, 'entrepreneurship_id');
     }
+
+    public function files()
+    {
+        return $this->hasMany(ProductFile::class);
+    }
 }

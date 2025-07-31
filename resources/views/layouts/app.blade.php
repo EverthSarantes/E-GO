@@ -37,13 +37,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">
+                        <a href="{{route('entrepreneur.products.index')}}" class="nav-link">
                             <i class="bi bi-box"></i> Productos
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">
-                            <i class="bi bi-gear"></i> Configuración
+                        <a href="{{route('admin.products.categories.index')}}" class="nav-link">
+                            <i class="bi bi-gear"></i> Catalogos
                         </a>
                     </li>
                 </ul>

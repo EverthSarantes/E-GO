@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('entrepreneurships', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->integer('years_of_experience')->default(0);
             $table->text('description')->nullable();
 

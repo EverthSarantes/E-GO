@@ -6,7 +6,7 @@ use App\Models\BaseModel;
 
 class ProductFile extends BaseModel
 {
-    protected $table = 'product_files';
+    protected $table = 'products_files';
 
     protected $fillable = [
         'product_id',
@@ -21,7 +21,7 @@ class ProductFile extends BaseModel
 
     public function getFileUrlAttribute()
     {
-        //por crear implementación para obtener la URL del archivo
+        return config('app.url') . '/storage/admin/' . $this->file_name;
     }
 
     public function product()
