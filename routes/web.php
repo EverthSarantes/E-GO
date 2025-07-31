@@ -11,3 +11,15 @@ Route::prefix('admin')->group(function () {
         return view('admin.panel');
     });
 });
+
+Route::prefix('customer')->group(function () {
+    Route::get('/panel', function () {
+        return view('customer.panel');
+    });
+});
+
+Route::prefix('entrepreneur')->group(function () {
+    Route::get('/panel', function () {
+        return view('entrepreneur.panel');
+    });
+});
