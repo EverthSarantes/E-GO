@@ -1,0 +1,56 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f5f6fa;
+}
+.sidebar {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #7b5cff 0%, #6ad7e5 100%);
+    color: #fff;
+    padding-top: 1.5rem;
+}
+.sidebar .nav-link {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.sidebar .nav-link.active, .sidebar .nav-link:hover {
+    background: rgba(255,255,255,0.15);
+    border-radius: 8px;
+}
+.sidebar .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 8px #7b5cff11;
+}
+.main-content {
+    padding: 2rem 1.5rem;
+}
+@media (max-width: 991.98px) {
+    .sidebar {
+        display: none !important;
+    }
+    .sidebar.collapse.show {
+        display: flex !important;
+        position: absolute;
+        z-index: 1050;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 70vw;
+        min-width: 220px;
+        max-width: 320px;
+        box-shadow: 2px 0 16px #0002;
+        background: linear-gradient(135deg, #7b5cff 0%, #6ad7e5 100%);
+        animation: slideInSidebar 0.2s;
+    }
+}
+
+@keyframes slideInSidebar {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
