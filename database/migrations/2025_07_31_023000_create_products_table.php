@@ -24,6 +24,10 @@ return new class extends Migration
             $table->foreign('entrepreneurship_id')->references('id')->on('entrepreneurships')
             ->onDelete('set null')->onUpdate('cascade');
 
+            $table->unsignedBigInteger('product_category_id')->nullable();
+            $table->foreign('product_category_id')->references('id')->on('product_categories')
+            ->onDelete('set null')->onUpdate('cascade');
+
             $table->timestamps();
         });
     }
